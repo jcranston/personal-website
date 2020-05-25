@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import BlogPost from './BlogPost';
 import * as serviceWorker from './serviceWorker';
+import blogs from './blog-post.json'
 
-ReactDOM.render(
+const blogPosts = blogs.map((blog, id) => {
+  return <BlogPost title={blog.title} body={blog.body} key={id}/>
+})
+
+ReactDOM.render(  
   <React.StrictMode>
-    <App />
+    {blogPosts}
   </React.StrictMode>,
   document.getElementById('root')
 );
