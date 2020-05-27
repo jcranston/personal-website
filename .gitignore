@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-
+n
 # production
 /build
 
@@ -23,4 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # actual blog posts (for now)
-src/blog-post.json
+src/blog-posts.json
+
