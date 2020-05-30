@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import BlogPost from './BlogPost';
 import * as serviceWorker from './serviceWorker';
-import blogs from './blog-post.json'
+import blogs from './blog-posts.json'
 
 const blogPosts = blogs.map((blog, id) => {
   return <BlogPost title={blog.title} body={blog.body} key={id}/>
